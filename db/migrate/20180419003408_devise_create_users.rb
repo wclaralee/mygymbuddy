@@ -5,8 +5,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
     create_table :users do |t|
       ## Database authenticatable
       t.string :name
-      t.string :venmo
-      t.integer :water
+      t.string :venmo_handle
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
