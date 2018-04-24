@@ -19,24 +19,8 @@
        <%= render 'layouts/messages' %>
        <%= yield %>
       
-<h3>Here are some body parts we can target!</h3>
-    <div class="column">
-      <table class="table">
-        <tbody>
-          <% @targets.each do |targets| %>
-            <tr>
-              <% @exercise.each do |e| %>
-
-      Body Part: <%= targets.body %> 
-        <%= e.description  %>
-        <%= button_to "Start!", start_path(id: e), :class => "button medium", :method => "get" %>
-        <% end %>
-       
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
-    </main>
-  </body>
+      </main>
+    </meta>
+  </meta>
+</head>
 </html>

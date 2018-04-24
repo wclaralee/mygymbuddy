@@ -1,0 +1,8 @@
+<h1> Create New Exercise! </h1>
+<%= simple_form_for @exercise, :url => create_exercise_path do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :duration %>
+
+  <%= f.button :submit, class: "create-exercise-btn" %>
+<% end %>
