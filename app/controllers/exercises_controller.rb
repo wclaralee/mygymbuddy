@@ -8,10 +8,16 @@ class ExercisesController < ApplicationController
     @exercise.title = ''
     @exercise.description = ''
     @exercise.duration = 0
+
+    render :show
   end
 
   def show
     # @exercise = Exercise.find(params[:exercise_id])
+  end
+
+  def index
+    @exercises = Exercise.all 
   end
 
   private
