@@ -13,5 +13,5 @@ Rails.application.routes.draw do
 	post "/users/edit", to: "user#update"
 	get '/users/water', to: "user#hydrate"
   get "/targets/index", to: "targets#index", as: "targets_index"
-  
+  get "/targets/:id", to: "targets#show", as: "targets_show"
 end
