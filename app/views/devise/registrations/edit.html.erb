@@ -5,15 +5,20 @@
 <ul>
   <li>Name: <%= current_user.name %></li>
   <li>Total Hydration (in cups): <%= current_user.water %></li>
+  <li><%= form_for :current_user do |f| %>
+    Cups: <%= f.number_field :water, value: 0 %><br />
+  <div class="actions">
+    <%= submit_tag "Hydrate!", name: 'hydrate' %>
+    <%= submit_tag "Reset", name: 'reset' %>
+  </div></li>
+<% end %>
 </ul>
 
-
 <h3>Edit your Account</h3>
-
 <%= form_for :current_user do |f| %>
   Name: <%= f.text_field :name %><br />
   <div class="actions">
-    <%= f.submit "Update Profile"%>
+    <%= submit_tag "Update Profile"%>
   </div>
 <% end %>
 </br>
