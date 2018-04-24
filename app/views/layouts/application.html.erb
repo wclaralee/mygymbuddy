@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Divvy" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Divvy" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "My Gym Buddy" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "My Gym Buddy" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
     <%# Modernizr is required for Zurb Foundation %>
     <%= javascript_include_tag 'vendor/modernizr' %>
@@ -17,6 +17,25 @@
     <main role="main">
        <%= render 'layouts/messages' %>
        <%= yield %>
+      
+<h3>Here are some body parts we can target!</h3>
+    <div class="column">
+      <table class="table">
+        <tbody>
+          <% @targets.each do |targets| %>
+            <tr>
+              <% @exercise.each do |e| %>
+
+      Body Part: <%= targets.body %> 
+        <%= e.description  %>
+        <%= button_to "Start!", start_path(id: e), :class => "button medium", :method => "get" %>
+        <% end %>
+       
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
     </main>
   </body>
 </html>
