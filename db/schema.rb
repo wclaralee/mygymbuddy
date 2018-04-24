@@ -23,6 +23,10 @@ ActiveRecord::Schema.define(version: 20180423005919) do
 
   create_table "targets", force: :cascade do |t|
     t.string "body"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 22ba6a334c9fda6888fd44ce045c2685ad118ae7
 ActiveRecord::Schema.define(version: 20180423235126) do
 
   create_table "events", force: :cascade do |t|
