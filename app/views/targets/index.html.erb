@@ -1,11 +1,6 @@
 <% @targets.each do |target| %>
-	<h1> Choose from <%= target.body %> exercises:</h1>
+	<h1> <%= link_to trainer.exe<%= target.body %> exercises:</h1>
 
-		<%= @exercises.each do |e| %>
-			<% if e.id == current_target.id %>
-				<p>Title: <%= e.title %></p>
-				<p>Description: <%= e.description %></p>
-				<p>Duration: <%= e.duration %> </p>
-			<% end %>
-		<% end %>
+		wait how do i link this to the exercise page?
+
 <% end %>
