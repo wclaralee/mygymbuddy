@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   post "/exercises/create", to: "exercises#create", as: "create_exercise"
 	post "/users/edit", to: "user#update"
 	get '/users/water', to: "user#hydrate"
+  get "/targets/index", to: "targets#index", as: "targets_index"
   
 end
