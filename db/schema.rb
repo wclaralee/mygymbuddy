@@ -10,12 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20180423010024) do
+
+  create_table "exercises", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.integer "duration"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+
 ActiveRecord::Schema.define(version: 20180423005919) do
 
   create_table "targets", force: :cascade do |t|
     t.string "body"
-=======
+
 ActiveRecord::Schema.define(version: 20180423235126) do
 
   create_table "events", force: :cascade do |t|
@@ -34,7 +42,6 @@ ActiveRecord::Schema.define(version: 20180423235126) do
     t.decimal "amount"
     t.integer "user_id"
     t.integer "event_id"
->>>>>>> 326a6cd820d95ef7386708cc337e238299fb62e9
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "participating_users"
