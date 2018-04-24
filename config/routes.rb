@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root to: "home#index"
+
+  get "/exercises/show", to: "exercises#show"
+  post "/exercises/create", to: "exercises#create", as: "create_exercise"
 end
