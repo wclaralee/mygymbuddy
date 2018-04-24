@@ -6,5 +6,11 @@ class UserController < ApplicationController
 		current_user.save
 		redirect_to '/users/edit'
 	end
+
+	def hydrate
+		current_user.water += params[:current_user][:water]
+		current_user.save
+		redirect_to '/users/water'
+	end
 	
 end

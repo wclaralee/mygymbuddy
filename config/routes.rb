@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 	root to: "home#index"
 
 	post "/users/edit", to: "user#update"
+	get '/users/water', to: "user#hydrate"
+
 end
