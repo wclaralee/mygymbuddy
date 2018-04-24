@@ -1,6 +1,6 @@
 <% @targets.each do |target| %>
-	<h1> <%= link_to trainer.exe<%= target.body %> exercises:</h1>
+	<h1> <%= link_to target.body, targets_show_path(target) %> </h1>
 
-		wait how do i link this to the exercise page?
+	
 
 <% end %>
