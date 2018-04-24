@@ -4,16 +4,15 @@
     <div class="column">
       <table class="table">
         <tbody>
-          <% @targets.each do |targets| %>
+          <% @targets.each do |target| %>
+          <% @exercises.each do |e| %>
             <tr>
-            	<% @exercise.each do |e| %>
 
-			Body Part: <%= targets.body %> 
+              Body Part: <% target %> 
 				<%= e.description  %>
 				<%= button_to "Start!", start_path(id: e), :class => "button medium", :method => "get" %>
-				<% end %>
-       
             </tr>
+            <% end %>
           <% end %>
         </tbody>
       </table>

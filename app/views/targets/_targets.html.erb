@@ -1,6 +1,0 @@
-<% @exercise.each do |e| %>
-
-Body Part: <% target %> 
-<%= e.description  %>
-<%= button_to "Start!", start_path(id: e), :class => "button medium", :method => "get" %>
-<% end %>
