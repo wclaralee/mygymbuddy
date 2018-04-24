@@ -4,4 +4,8 @@ Rails.application.routes.draw do
 	# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 	resources :users
 	root to: "home#index"
+
+	post "/users/edit", to: "user#update"
+	get '/users/water', to: "user#hydrate"
+
 end
