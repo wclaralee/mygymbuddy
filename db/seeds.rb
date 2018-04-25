@@ -8,21 +8,21 @@
 
 targets = Target.create([
     { body: 'Butt' },
-    { name: 'Arms' },
-    { name: 'Shoulders' },
-    { name: 'Legs' },
-    { name: 'Chest' },
-    { name: 'Back' },
+    { body: 'Arms' },
+    { body: 'Shoulders' },
+    { body: 'Legs' },
+    { body: 'Chest' },
+    { body: 'Back' },
 ])
 
 Exercise.create([
   { title: 'Hip Drive', 
         description: 'Sit on your knees, legs together, so your butt is on your heels. Engage your glutes to lift your butt and rise to a kneeling position. Slowly lower, keeping glutes engaged.', 
         duration: 60, 
-        target_id: targets[0] 
+        targets_id: targets[0] 
   },
   { title: 'Bottoms-Up Lunge', 
-        description: 'Perform a hip drive. Bring left foot forward so you're kneeling on right knee. Push into your left heel and engage glutes to stand, bringing right knee up. As you stand, try not to push off of the ground; instead, engage hamstrings and glutes to lift. Return to starting position.', 
+        description: 'Perform a hip drive. Bring left foot forward so you\'re kneeling on right knee. Push into your left heel and engage glutes to stand, bringing right knee up. As you stand, try not to push off of the ground; instead, engage hamstrings and glutes to lift. Return to starting position.', 
         duration: 60, 
         target_id: targets[0] 
   },
@@ -148,12 +148,12 @@ Exercise.create([
   },
   { title: 'Weighted Pullup', 
         description: 'Attach a weighted belt to your waist, hold a dumbbell between your feet, or—if you can’t complete your reps with weight—use body weight alone. Hang from a pullup bar with your hands just outside shoulder width. Pull yourself up until your chin is over the bar.', 
-        duration: , 
+        duration: 50, 
         target_id: targets[5] 
   },
   { title: 'Dumbbell Romanian Deadlift', 
         description: 'Grasp two dumbbells and hold them with feet set hip-width apart. Keeping your lower back in its natural arch, bend hips back, your torso forward, and lower yourself until you feel a stretch in your hamstrings. You may bend at the knees. Squeeze your glutes at the top of the movement after coming back up.', 
-        duration: , 
+        duration: 50, 
         target_id: targets[5] 
   },
   { title: 'Pallof Press Iso Hold', 
