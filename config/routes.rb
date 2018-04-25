@@ -6,10 +6,11 @@ Rails.application.routes.draw do
 	root to: "home#index"
 
   
-  
-	
-  get "/targets/index", to: "targets#index", as: "targets_index"
+get "/targets/index", to: "targets#index", as: "targets_index"
   get "/targets/:id", to: "targets#show", as: "targets_show"
+  
+
+  
 
   get "/exercises/index", to: "exercises#index", as: "all_exercises"
   get "/exercises/new", to: "exercises#new", as: "new_exercise"

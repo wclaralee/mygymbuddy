@@ -1,14 +1,16 @@
 class ExercisesController < ApplicationController
   def new
-    @exercise = Exercise.new
+    @exercises = Exercise.new
   end
 
   def create
     @exercise = Exercise.new(exercise_params)
-    @exercise.title = ''
-    @exercise.description = ''
-    @exercise.duration = 0
-    render :show
+
+    if @exercise.save
+      redirect_to all_exercises_path
+    else
+      redirect_to new_exercise_path, :flash => { :error => "Fill out all details for the exercise you're adding!"}
+    end
 
   end
 
@@ -18,9 +20,12 @@ class ExercisesController < ApplicationController
 
 
   def index
+
     @exercises = Exercise.all 
     render :index
-  end
+
+    @exercise = Exercise.all
+
 
 
   private
