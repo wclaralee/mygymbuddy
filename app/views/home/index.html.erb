@@ -3,8 +3,18 @@
 		<title>My Gym Buddy</title>
 	</head>
 	<body>
-		<h3>Welcome to My Gym Buddy!</h3>
-		<p><%= link_to 'Users:', user_session_path %> <%= User.count %> registered</p>
+        <div class="header">
+		<h3 class="first">Welcome to</h3>
+        <h3 class="second">My Gym Buddy</h3>
+        </div>
+        <div class="body">
+
+        <p> My Gym Buddy is an application that creates workouts for users according to their desired target area. To get started, <%= link_to 'click here', targets_index_path %> to choose exercises for specific body parts.</p> 
+
+
+        <p> <%= link_to 'Create New Exercises', new_exercise_path %> </p>
+        </div>
+		
 	</body>
 </html>
 

@@ -1,6 +1,6 @@
-<h1> Choose from <%= target.body %> exercises:</h1>
+<% @targets.each do |target| %>
+	<h1> <%= link_to target.body, targets_show_path(target) %> </h1>
 
-	<%= @exercises.each do |e| %>
-	<%= render '/exercises/show' %> 
-<% end %>
+	
+
 <% end %>

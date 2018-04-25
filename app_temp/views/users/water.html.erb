@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<h2><%= current_user.name %>'s Hydration Station</h2>
+
+	<h3>Hydration Health</h3>
+	<ul>
+	  <li>Total Hydration (in cups): <%= current_user.water %></li>
+	</ul>
+
+
+	<h3>Edit your Account</h3>
+
+	<%= form_for :current_user do |f| %>
+	  Cups of Hydration to Add: <%= f.number_field :water %><br />
+	  <div class="actions">
+	    <%= f.submit "Hydrate!"%>
+	  </div>
+	<% end %>
+	</br>
+
+	<%= link_to "Back", :back %>
+</html>
