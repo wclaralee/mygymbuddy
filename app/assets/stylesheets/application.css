@@ -16,43 +16,45 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700');
  /* Top Nav */
  /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: black;
     overflow: hidden;
-    color: white;
 }
 
 .link a:link {
     text-decoration: none;
-    color: white;
 
 }
 .link {
     list-style-type: none;
-    color: white;
 }
 
 .link a {
     color: white;
 }
 
+.bottom-links {
+    padding-top: 20px;
+    text-align: left;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
+    float: right;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     font-size: 17px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: purple;
+    background-color: black;
     color: white;
 }
 
@@ -62,47 +64,151 @@
     color: white;
 }
 
- /* Sign Up */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-body {
-  background: #97659b;
+.left-nav {
+    float: left;
+}
+.remember {
+    float: left;
+    width: 50%;
+}
+p {
+    color: white;
 }
 
+#user_remember_me input {
+    margin-left: 0;
+    padding: 0;
+    width: 10%;
+    align-items: left;
+}
+
+.remember .box {
+    float: right;
+    width: 10%;
+}
+
+.body {
+    margin-top: 50px;
+}
+
+body {
+  background: black;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body .header {
+    font-size: 60px;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+    margin-top: 100px;
+}
+
+body .header .first {
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+body .header .second {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+
 .signup-form {
-  font-family: 'Open Sans', sans-serif;
-  width:300px;
-  margin:30px auto;
-  background:linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+  font-family: 'Titillium Web', sans-serif;
+  width: 350px;
+  margin: 30px auto;
+  background: black;
+  border-radius: 10px;
+}
+.login-form {
+  font-family: 'Titillium Web', sans-serif;
+  width: 350px;
+  margin: 30px auto;
+  background: black;
   border-radius: 10px;
 }
 
 .form-header  {
-  background-color: #EFF0F1;
+  background-color: black;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  color: white;
 }
 
 .signup-form h1 {
     text-align: center;
 }
+.login-form h1 {
+    text-align: center;
+}
 
 .form-header h1 {
   font-size: 30px;
-  text-align:center;
-  color:#666;
+  text-align: center;
+  color: white;
+  background-color: black;
   padding:20px;
   border-bottom:1px solid #cccccc;
 }
 /*---------------------------------------*/
 /* Form Body */
 /*---------------------------------------*/
-.form-body {
-  padding:10px 40px;
+.login-form .form-body {
+  margin: 0;
   color:#666;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.form-group{
-  margin-bottom:20px;
+.signup-form {
+    display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signup-form .form-body {
+  margin-left: 0px;
+  margin: 0;
+  color:#666;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#new_user {
+    display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 233px;
+}
+
+.login-form .form-group {
+  margin-bottom:10px;
+  width: 100%;
+
+}
+.signup-form .form-group {
+  margin-bottom:10px;
+  width: 100%;
+
+}
+.signup-form .form-group input {
+    width: 100%;
+}
+.login-form .form-group input {
+    width: 100%;
 }
 .form-body .label-title {
   color:#1BBA93;
@@ -123,19 +229,13 @@ body {
     background: white;
     outline: none;
 }
-.horizontal-group .left{
-  float:left;
-  width:49%;
-}
-.horizontal-group .right{
-  float:right;
-  width:49%;
-}
+
 input[type="file"] {
  outline: none;
  cursor:pointer;
  font-size: 17px;
 }
+
 #range-label {
  width:15%;
  padding:5px;
@@ -154,6 +254,7 @@ input[type="file"] {
 /*---------------------------------------*/
 .form-footer {
  clear:both;
+ width: 233px;
 }
 
 
@@ -161,34 +262,25 @@ input[type="file"] {
 /* Form Footer */
 /*---------------------------------------*/
 .signup-form .form-footer  {
-  background-color: #EFF0F1;
+  background-color: black;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding:10px 40px;
   text-align: right;
-  border-top: 1px solid #cccccc;
+}
+.login-form .form-footer  {
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:10px 40px;
+  text-align: right;
 }
 .form-footer span {
-  float:left;
-  margin-top: 10px;
   color:#999;  
   font-style: italic;
   font-weight: thin;
 }
-.btn {
-   display:inline-block;
-   padding:10px 20px;
-   background-color: #1BBA93;
-   font-size:17px;
-   border:none;
-   border-radius:5px;
-   color:#bcf5e7;
-   cursor:pointer;
-}
-.btn:hover {
-  background-color: #169c7b;
-  color:white;
-}
+
 
 /* Users page */
 .header {
@@ -208,5 +300,5 @@ input[type="file"] {
 }
 
 .body {
-    
+
 }

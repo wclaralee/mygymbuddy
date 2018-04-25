@@ -1,6 +1,11 @@
 <%# navigation styled for Zurb Foundation 5 %>
 <nav class="topnav" data-topbar>
-    <li class="name link"><%= link_to 'Home', root_path %></li>
+    <div class="left-nav">
+        <p>Users: <%= User.count %> registered</p>
+    </div>
+    
     <%= render 'layouts/navigation_links' %>
+    <li class="name link"><%= link_to 'Home', root_path %></li>
+
 </nav>
 
