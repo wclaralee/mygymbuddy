@@ -1,0 +1,9 @@
+<h1> Create New Exercise! </h1>
+
+<%= form_for :exercise do |f| %>
+  Title: <%= f.text_field :title %><br />
+  Description: <%= f.text_field :description %><br />
+  Duration: <%= f.number_field :duration %><br />
+
+  <%= f.submit %>
+<% end %>

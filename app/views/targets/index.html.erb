@@ -1,2 +1,6 @@
-<td><%= link_to target.body, target %></td>
-this one is index. 
+<% @targets.each do |target| %>
+	<h1> <%= link_to target.body, targets_show_path(target) %> </h1>
+
+	
+
+<% end %>
