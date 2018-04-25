@@ -18,9 +18,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700');
  /* Top Nav */
- /* Add a black background color to the top navigation */
+ /* Add a #7aa4e8 background color to the top navigation */
 .topnav {
-    background-color: black;
+    background-color: #7aa4e8;
     overflow: hidden;
 }
 
@@ -54,7 +54,7 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: black;
+    background-color: #7aa4e8;
     color: white;
 }
 
@@ -92,7 +92,7 @@ p {
 }
 
 body {
-  background: black;
+  background: #7aa4e8;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -122,19 +122,19 @@ body .header .second {
   font-family: 'Titillium Web', sans-serif;
   width: 350px;
   margin: 30px auto;
-  background: black;
+  background: #7aa4e8;
   border-radius: 10px;
 }
 .login-form {
   font-family: 'Titillium Web', sans-serif;
   width: 350px;
   margin: 30px auto;
-  background: black;
+  background: #7aa4e8;
   border-radius: 10px;
 }
 
 .form-header  {
-  background-color: black;
+  background-color: #7aa4e8;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   color: white;
@@ -151,7 +151,7 @@ body .header .second {
   font-size: 30px;
   text-align: center;
   color: white;
-  background-color: black;
+  background-color: #7aa4e8;
   padding:20px;
   border-bottom:1px solid #cccccc;
 }
@@ -262,14 +262,14 @@ input[type="file"] {
 /* Form Footer */
 /*---------------------------------------*/
 .signup-form .form-footer  {
-  background-color: black;
+  background-color: #7aa4e8;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding:10px 40px;
   text-align: right;
 }
 .login-form .form-footer  {
-  background-color: black;
+  background-color: #7aa4e8;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding:10px 40px;
@@ -289,7 +289,7 @@ input[type="file"] {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     text-align: center;
-    background: black;
+    background: #7aa4e8;
     color: white;
 }
 
