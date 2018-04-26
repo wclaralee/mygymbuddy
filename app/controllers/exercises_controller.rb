@@ -7,7 +7,7 @@ class ExercisesController < ApplicationController
     @exercise = Exercise.new(exercise_params)
 
     if @exercise.save && (["Butt", "Arms", "Shoulders", "Legs", "Chest", "Back"].include? @exercise.body_part)
-      redirect_to display_exercises_path
+      redirect_to display_exercises_path(body_part: @exercise.body_part)
     else
       redirect_to new_exercise_path, :flash => { :error => "Fill out all details for the exercise you're adding!"}
     end
@@ -20,7 +20,8 @@ class ExercisesController < ApplicationController
 
 
   def index
-    @exercise = Exercise.all
+    @exercise = Exercise.where(body_part: params[:body_part])
+
   end
 
   private

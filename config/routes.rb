@@ -9,9 +9,9 @@ Rails.application.routes.draw do
 	get "/targets/index", to: "targets#index", as: "targets_index"
 	get "/targets/:id", to: "targets#show", as: "targets_show"
 	
-	get "/exercises/index", to: "exercises#index", as: "display_exercises"
 	get "/exercises/new", to: "exercises#new", as: "new_exercise"
 	post "exercises/new", to: "exercises#create", as: "create_exercise"
+	get "/exercises/:body_part", to: "exercises#index", as: "display_exercises"
 	
 	post "/users/edit", to: "user#update"
 	get '/users/water', to: "user#hydrate"
