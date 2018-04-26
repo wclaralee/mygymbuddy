@@ -6,6 +6,7 @@ class TargetsController < ApplicationController
 
 	def show
 		@target = Target.find(params[:id])
+		# @target = @exercise.body_part
 		@exercise = Exercise.where(target_id: params[:id])
 		# render :show
 	end

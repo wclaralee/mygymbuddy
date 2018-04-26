@@ -1,5 +1,6 @@
+<h1 class="bodyparts"> Choose your workout </h1>
 <% @targets.each do |target| %>
-	<h3> <%= link_to target.body, targets_show_path(target) %> </h3>
+	<h3 class="bodypart"> <%= link_to target.body, targets_show_path(target) %> </h3>
 
 	
 

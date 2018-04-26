@@ -1,8 +1,11 @@
+
 <% @exercise.each do |exercise| %>
-  Title: <%= exercise.title %> <br>
-  Description: <%= exercise.description %> <br>
-  Duration: <%= exercise.duration %> <br>
-  <br>
+  <div class="showexercise"> <% if (exercise.body_part) %>
+  	Title: <%= exercise.title %> <br>
+  	Description: <%= exercise.description %> <br>
+  	Duration: <%= exercise.duration %> <br>
+  <% end %>
+  <br></div>
 <% end %>
 
 <a href="new">Create New Exercise</a>
